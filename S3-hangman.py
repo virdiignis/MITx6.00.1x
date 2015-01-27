@@ -88,8 +88,7 @@ letter long.')
         print('You have ' + str(guessesLeft) + ' guesses left.')
         print('Available letters: ' + 
 getAvailableLetters(lettersGuessed))
-        guess = raw_input('Please guess a letter: ')
-        guess = guess.lower()
+        guess = raw_input('Please guess a letter: ').lower()
         if guess in lettersGuessed:
             print("Oops! You've already guessed that letter:" + 
 getGuessedWord(secretWord, lettersGuessed))
